@@ -1,0 +1,9 @@
+local places = {
+    [93411036959889] = "https://vampauth.com/api/projects/3faacdcc-33d3-41c9-8862-fc7ad18be22d/scripts/max3k",
+    [75012837977315] = "https://vampauth.com/api/projects/3faacdcc-33d3-41c9-8862-fc7ad18be22d/scripts/max4k"
+}
+
+local url = places[game.PlaceId]
+if url then
+    loadstring(game:HttpGet(url))()
+end
